@@ -21,15 +21,15 @@ domain:
 #
 
 # Used in header meta tags and the site feed.
-author:
+author: Matthew Clemens
 # A description of your site to be used in header meta tags.
 description:
 # Used in the site feed.
-email:
+email: mclemens66@gmail.com
 # Your site's subtitle.
 subtitle:
 # Your site's title.
-title:
+title: nrgclemens
 
 
 #
@@ -54,12 +54,12 @@ feed: true
 #   Set any of the following to your username/ID on that site to enable it.
 social:
     dribbble:
-    facebook:
-    github:
+    facebook: enjoymatt
+    github: enjoylife
     google_plus:
     lastfm:
     stack_overflow:
-    steam:
+    steam: hockey_time
     twitter:
 
 
