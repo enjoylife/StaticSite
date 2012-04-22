@@ -13,9 +13,9 @@
             <div class="threecol">
 
                     <ul id="nav">
-                        <li><a href="{{ get_url() }}">Blog</a></li>
-                        <li><a href="{{ get_url('archives/') }}">Archives</a></li>
-                        {% if site.feed %}<li><a href="{{ get_url('feed.xml') }}">Feed</a></li>{% endif %}
+                        <li><a href="{{ get_url() }}">[Blog]</a></li>
+                        <li><a href="{{ get_url('archives/') }}">[Archives]</a></li>
+                        <li><a href="{{ get_url('about.html') }}">[About]</a></li>
                     </ul>
                     
                     {% if site.social.values()|sort(true)|first %}
@@ -30,16 +30,17 @@
             {% endif %}
             </div>
 
-            <div class="ninecol last">
-                <h1 id="title"><a href="{{ get_url() }}"><span class="flair">@</span>{{ site.title }}</a></h1>
-                    {% if site.subtitle %}<h2>{{ site.subtitle }}</h2>{% endif %}
-                
+        <div class="ninecol last">
+            <div>
+                <h1 id="title"><a href="{{ get_url() }}"><span class="flair">//</span>{{ site.title }}</a></h1>
+                {% if site.subtitle %}<h2 id="subtitle">"{{ site.subtitle }}"</h2>{% endif %}
+            </div> 
                 <div id="content">
                     {% block content %}{% endblock %}
                 </div>
                 
                 <div id="footer">
-                    <p>{% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}</p>
+                    <p>{% if site.author %}&copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}{% if site.feed %}<a href="{{ get_url('feed.xml') }}"> Feed</a>{% endif %}</p>
                 </div>
             </div>
         </div>
