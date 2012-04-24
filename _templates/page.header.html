@@ -8,9 +8,6 @@
 
 {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">{% endif %}
 
-<!-- MY DEFINED STYLES -->
-<link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
-
 <!-- Code highlighting for future use -->
 {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
 
@@ -45,3 +42,8 @@
         })();
     </script>
 {% endif %}
+
+<!-- MY DEFINED STYLES -->
+<link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
+
+

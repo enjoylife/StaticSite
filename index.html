@@ -2,12 +2,12 @@
 
 
 {% block content %}
-    <table>
-        <tbody>
+    <table class="maintable">
+        <tbody class="maintable">
     {% for post in posts %}
-        <tr>
+        <tr class="maintable">
             {% if site.post_limit and loop.index > site.post_limit %}{% break %}{% endif %}
-            <td><a class="linktitle" href="{{ get_url(post.url) }}">{{ post.title }}</a></td>
+            <td class="maintable"><a class="linktitle" href="{{ get_url(post.url) }}">{{ post.title }}</a></td>
         </tr>
     {% endfor %}
 </tbody>

@@ -6,8 +6,8 @@
         font-family :'PT Sans', sans-serif;
 		
 	}
-    p { padding-top:5px;
-        padding-bottom:5px;
+    p { padding-top:10px;
+        padding-bottom:10px;
     }
 
 /* Navigation styles */
@@ -65,15 +65,16 @@
         float:right;
         clear:both;
         display:inline;
+        padding-bottom:20px;
    }
 
 
 /* Index Table */
-    table{
+    table.maintable {
     border-collapse:collapse;
     width:100%;
     }
-    tbody tr td{
+    tbody.maintable tr.maintable td.maintable {
     border: 1px solid #003366;
     border-collapse:collapse;
     padding-top:5px;
@@ -104,6 +105,7 @@
 
     div.header h1 {
         color: #04819E;
+        padding-bottom:15px;
     }
     div.header  a {
         color: #04819E;
