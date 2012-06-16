@@ -1,194 +1,122 @@
-/* ============================== */
-/* ! Layout for desktop version   */
-/* ============================== */
-
+/* Basic Layout Properties for desktop version
+ ***************************************************/
 	body {
-        font-family :'PT Sans', sans-serif;
-		
+      /*  font-family :'PT Sans', sans-serif; */
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
-    p { padding-top:10px;
-        padding-bottom:10px;
-    }
-
-/* Navigation styles */
-    a:link {
-        color:#0066CC;  
-        text-decoration:none;
-    }
-    a:visited {
-        color:#0066CC;  
-        text-decoration:none;
-    }     
-    a:hover {
-        color:#CC0066;  
-        text-decoration:none;
-    }
-    a:active {
-        color:#0066CC;  
-        text-decoration:none;
-    }
-            
-    ul#nav {
-        margin-bottom:10px;
-        list-style:none;
-        font-size:1.5em;
-    }
-
-    ul#nav li{
-        clear:right;
-        padding-right:5px;
-    }
-
-    ul#social {
-        padding:0;
-        margin:0;
-        list-style:none;
-        clear:both;
-    }
-
-    ul#social li{
-        display:inline;
-        padding-right:5px;
-    }
-
-
-/* title */
-    h1#title a{
-        color: #003366;
-        font-size:2em;
-        float:right;
-        clear:both;
-    }
-
-    h2#subtitle {
-        font-size:.7em;
-        float:right;
-        clear:both;
-        display:inline;
-        padding-bottom:20px;
-   }
-
-
-/* Index Table */
-    table.maintable {
-    border-collapse:collapse;
+#content {
+    margin-left: auto;
+    margin-right: auto;
     width:100%;
-    }
-    tbody.maintable tr.maintable td.maintable {
-    border: 1px solid #003366;
-    border-collapse:collapse;
-    padding-top:5px;
-    padding-bottom:5px;
-    }
+}
 
-     a.linktitle:link {
-         font-weight:bold;
-        color:#003366;
-        padding:10px;
-    }
+/* title
+ * **************************************************/
+#title {
+    padding-right:2px;
+    margin-top:10px;
+    text-align:center;
+    color: #003366;
+    font-size:4em;
+    float:right;
+}
 
-    a.linktitle:visited {
-    }
-    a.linktitle:hover {
-    }
-    a.linktitle:active {
-    }
+#subtitle {
+    padding-right:2px;
+    font-size:.7em;
+    text-align:center;
+    float:right;
+    clear:right;
+}
 
-    tr:nth-of-type(odd) {
-      background-color:#ccc;
-    }
+/* Front page
+***************************************************/
+#content table {
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    text-align:center;
+}
+
+#content td {
+}
+
+td.post-title {
+    text-align:left;
+}
+td.post-date {
+    text-align: right;
+}
+th.post-date {
+    text-align: right;
+}
+/* Footer
+***************************************************/
+footer {
+    text-align:center;
+}
 
 
-    #content{
-        clear:both;
-    }
+/* post and content
+***************************************************/
+div.main-content p {
+    width:75%;
+}
 
-    div.header h1 {
-        color: #04819E;
-        padding-bottom:15px;
-    }
-    div.header  a {
-        color: #04819E;
-    }
+aside {
+left: 80%;
+font-size:.9em;
+position: absolute;
+}
 
-/* Tag styles */
-    a.tags:link {
-        color:#7E7E7E;
-    }
-    a.tags:visited {
-        color:#7E7E7E;
-     }
-    a.tags:hover {
-        color:#7E7E7E;
-     }
-    a.tags:active {
-        color:#7E7E7E;
-     }
 
-/***********************/
+.to-continue {
+    font-weight:bold;
+    font-size:1.5em;
+}
 
+.link-post{
+    display:block;
+    height:100%;
+    line-height:100%;
+}
+
+/* found, saved, and extra styles */
+
+/* Special grid styles
+-------------------------------------------------- */
+.show-grid [class*="span"] {
+  background-color: #eee;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+
+.show-grid p   {
+  max-width:80%;
+  display: inherit;
+  text-indent: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#content.show-grid  p {
+    display: none;
+}
     
-	
+#content.show-grid > p ~ p   {
+    display:inherit;
+}
 
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
+.show-grid .show-grid [class*="span"] {
+  background-color: #ccc;
+}
 
-@media handheld, only screen and (max-width: 767px) {
-
-  
+blockquote span {
+    font-size:2em;
+    font-weight:bold;
 }
 
 
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
- 
-    ul#nav {
-        margin-bottom:10px;
-        float:left;
-        width:100%;
-        list-style:none;
-        font-size:1.0em;
-        clear:both;
-    }
-
-    ul#nav li{
-        padding-bottom:5px;
-        display:inline;
-    }
-
-    ul#social {
-        padding:0;
-        margin:0;
-        list-style:none;
-        float:left;
-        width:100%;
-    }
-
-    ul#social li{
-        display:inline;
-        padding-right:5px;
-    }
-
-/* title */
-    h1#title a{
-        color: #003366;
-        font-size:1.5em;
-        text-align:center;
-        clear:both;
-        padding-bottom:10px;
-        padding-top:10px;
-    }
-
-    h2#subtitle {
-        font-size:.5em;
-        text-align:center;
-        display:inline;
-   }
-  
 
 
-}
