@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% include 'page.header.html' %}
+    
+</head>
+
+<body>
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+        <!--
+        <div id="spotlight" class="row show-grid">
+            <div class="span5">
+                <p><a href="#">Latest and greatest!!</a></p>
+            </div>
+        </div>
+        -->
+    <!-- Begin page content -->
+
+    <div class="container">
+        <div class="row">
+            <div  class="span5 menu" >
+
+                    {% include 'logo.html' %}
+            
+                    <div id="taglist" class="span5  menu taglist visible-tablet visible-desktop" >
+                       
+                {% for name, tag in tags %}
+                <a href="{{ get_url(tag.url) }}"><span class="label">{{ name }} ({{ tag.count }})</span></a>
+                {% endfor %}
+                    </div> <!-- End submenu -->
+
+                    <div id="projects" class="span5 menu submenu visible-tablet visible-desktop" >
+                        {% include 'projects.html' %}
+                    </div> <!-- End submenu -->
+
+            </div> <!-- End Left Col -->
+
+            
+            <div class="span7" >
+                <div  class="content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+
+            
+            </div>
+            
+        </div> <!-- END row -->
+    </div> <!-- END container -->
+
+     <!-- For stickyfoot.css -->
+    <div id="push"></div>
+    </div> <!-- END stickyfoot.css -->
+
+    <div id="footer">
+        <div class="container">
+            <p> 
+            © 2013  Matthew Clemens </p>
+        </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>
+

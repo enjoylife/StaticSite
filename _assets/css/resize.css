@@ -1,0 +1,177 @@
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .logo {
+    width:210px;
+    height:210px;
+    }
+
+    .hex-logo { 
+        padding-left:54px; /* overcome double the hex margins */
+        padding-right:13px; /* overcome half the hex margins */
+    }
+
+
+    .hex2:nth-of-type(3) {
+        margin-bottom:10px;
+    }
+
+    .hex2:nth-of-type(2) {
+        margin-bottom: -52px;
+    }
+
+    .hex2 .left {
+        border-right-color: #1E1E1F;
+    }
+    .hex2 .middle {
+        background: #1E1E1F;
+    }
+    .hex2 .right {
+        border-left-color:  #1E1E1F;
+    }
+
+    .label {
+    background-color: #1E1E1F;
+    }
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+    .logo {
+        width:140px;
+        height:140px;
+    }
+    .label {
+    background-color: #FF5900;
+    }
+
+    .hex-logo { 
+        padding-left:54px; /* overcome double the hex margins */
+        padding-right:13px; /* overcome half the hex margins */
+    }
+
+    .hex2:nth-of-type(3) {
+        margin-bottom:10px;
+    }
+
+    .hex2:nth-of-type(2) {
+        margin-bottom: -52px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+    .label {
+    background-color: #0D56A6;
+    }
+    .logo {
+        width:70px;
+        height:70px;
+    }
+
+
+    .hex2 {
+        float: left;
+        margin-right:-16px;
+        margin-bottom: -20px;
+    }
+    .hex2:nth-of-type(3) {
+        margin-bottom:10px;
+    }
+
+    .hex2:nth-of-type(2) {
+        margin-bottom:-35px;
+    }
+    .hex2 .left {
+        float: left;
+        width: 0;
+        border-right: 20px solid #0D56A6;
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+    }
+    .hex2 .middle {
+        float: left;
+        width: 35px;
+        height: 70px;
+        background: #0D56A6;
+    }
+    .hex2 .right {
+        float: left;
+        width: 0;
+        border-left: 20px solid #0D56A6;
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+    }
+    .hex {
+        clear: left;
+    }
+    .hex2.even {
+        margin-top: 35px;
+    }
+
+    .hex-logo { 
+        padding-right:36px; /* overcome hex margins */
+        width:150px;
+     display: table;
+    margin: 0 auto;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+    .logo {
+        width:70px;
+        height:70px;
+    }
+    .label {
+        background-color: #4DDE00; 
+    }
+
+    .hex2 {
+        float: left;
+        margin-bottom: -14px;
+        margin-right:-11px;
+    }
+    .hex2:nth-of-type(3) {
+        margin-bottom:10px;
+    }
+
+    .hex2:nth-of-type(2) {
+        margin-bottom:-25px;
+    }
+    .hex2 .left {
+        float: left;
+        width: 0;
+        border-right: 14px solid #4DDE00;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    .hex2 .middle {
+        float: left;
+        width: 26px;
+        height: 50px;
+        background: #4DDE00;
+    }
+    .hex2 .right {
+        float: left;
+        width: 0;
+        border-left: 14px solid #4DDE00;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    .hex {
+        clear: left;
+    }
+    .hex2.even {
+        margin-top: 25px;
+    }
+
+    .hex-logo { 
+        width:100px;
+     display: table;
+    margin: 0 auto;
+    }
+}

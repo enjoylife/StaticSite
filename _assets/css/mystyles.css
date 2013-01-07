@@ -1,0 +1,224 @@
+body {
+
+font-family: 'Arvo', serif;
+
+}
+
+#sitetitle a:link, a:visited, a:hover {
+    text-decoration:none;
+    color:#333;
+}
+
+/* For Title Middle name ":" character */
+.sitetitlespec {
+    position: relative;
+    top:-8px;
+}
+.menu {
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 40px;
+    line-height: 40px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.content {
+}
+
+.logo {
+    float:left;
+    margin-right:10px;
+    clear:left;
+    width:210px;
+    height:210px;
+}
+
+/* Stuff */
+.hex2 {
+    float: left;
+    margin-right: -26px;
+    margin-bottom: -52px;
+    padding-top:3px;
+}
+
+.hex2:nth-of-type(3) {
+    margin-bottom:10px;
+}
+
+.hex2:nth-of-type(2) {
+    margin-bottom:-52px;
+}
+.hex2 .left {
+    float: left;
+    width: 0;
+    border-right: 30px solid #FF5900;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+.hex2 .middle {
+    float: left;
+    width: 60px;
+    height: 104px;
+    background: #FF5900;
+}
+.hex2 .right {
+    float: left;
+    width: 10;
+    border-left: 30px solid #FF5900;
+    border-top: 52px solid transparent;
+    border-bottom: 52px solid transparent;
+}
+.hex {
+    clear: left;
+}
+.hex2.even {
+    margin-top: 53px;
+}
+
+.hex-logo { 
+    padding-right:26px; /* overcome hex margins */
+    display: table;
+    margin: 0 auto;
+    width:200px;
+}
+.hex-logo { 
+        padding-left:54px; /* overcome double the hex margins */
+        padding-right:13px; /* overcome half the hex margins */
+    }
+
+.submenu, .content, .taglist {
+    position: relative;
+    margin: 15px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    font-size; 10px;
+    line-height:14px;
+    text-align:left;
+    padding-top:25px;
+}
+
+/* Echo out a label for the example */
+.submenu:after, .content:after, .taglist:after {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    -webkit-border-radius: 4px 0 4px 0;
+       -moz-border-radius: 4px 0 4px 0;
+            border-radius: 4px 0 4px 0;
+}
+.submenu:after {
+    content: "Current Projects";
+}
+
+.content:after {
+    content: "Blog";
+}
+
+/* Echo out a label for the example */
+.taglist:after {
+    content: "Used Tags";
+}
+.project-divider {
+    padding:10px;
+    padding-bottom:5px;
+}
+.progress {
+    margin-bottom:10px;
+}
+
+#projects h3{
+    line-height:20px;
+}
+#projects a, h6 {
+    text-align:left;
+    line-height:20px;
+    margin:0px;
+    padding:0px;
+}
+#projects .progress small {
+    font-size:20px;
+    line-height: 23px;
+}
+.article-header {
+    padding:15px 15px 0px 15px;
+}
+
+.label {
+    background-color: #FF5900;
+}
+.content h4, h2, .tags{
+    display:inline;
+    float:left;
+
+}
+
+
+.article-header h2 a:link, a:visited  {
+    text-decoration:none;
+    color:#333;
+}
+
+
+.article-header {
+
+    border-bottom:3px solid #ddd;
+}
+.lead-in {
+    padding:15px;
+    line-height:20px;
+}
+.lead-in  p:first-child{
+    text-indent:40px;
+}
+
+.lead-in a[rel=cite]:link {
+    text-decoration:italic;
+}
+
+.lead-in a[rel=cite] {
+    line-height:15px;
+    font-weight:bold;
+    font-size:75%;
+}
+
+.lead-in a[rel=cite]:before {
+    content: "[";
+}
+.lead-in a[rel=cite]:after {
+    content: "]";
+}
+
+#footer {
+    line-height:70px;
+    text-align:center;
+}
+
+.tagarchive {
+
+    position:relative;
+    padding:0px 15px 0px 15px;
+}
+
+.taglist {
+    text-align:center;
+    padding-top:40px;
+}
+
+.taglist .label {
+    margin-bottom:10px;
+}
+
+
+
