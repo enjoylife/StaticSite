@@ -125,6 +125,9 @@ font-family: 'Arvo', serif;
 .content:after {
     content: "Blog";
 }
+.personal:after {
+    content: "Personal";
+}
 
 /* Echo out a label for the example */
 .taglist:after {
@@ -185,6 +188,10 @@ font-family: 'Arvo', serif;
 
 .lead-in a[rel=cite]:link {
     text-decoration:italic;
+}
+
+.lead-in a {
+    color:#aaa;
 }
 
 .lead-in a[rel=cite] {

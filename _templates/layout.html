@@ -24,16 +24,20 @@
 
                     {% include 'logo.html' %}
             
-                    <div id="taglist" class="span5  menu taglist visible-tablet visible-desktop" >
+                <div id="taglist" class="span5  menu taglist visible-tablet visible-desktop" >
                        
-                {% for name, tag in tags %}
-                <a href="{{ get_url(tag.url) }}"><span class="label">{{ name }} ({{ tag.count }})</span></a>
-                {% endfor %}
-                    </div> <!-- End submenu -->
+                    {% for name, tag in tags %}
+                    <a href="{{ get_url(tag.url) }}"><span class="label">{{ name }} ({{ tag.count }})</span></a>
+                    {% endfor %}
+                </div> <!-- End Tags -->
 
-                    <div id="projects" class="span5 menu submenu visible-tablet visible-desktop" >
-                        {% include 'projects.html' %}
-                    </div> <!-- End submenu -->
+                <div id="projects" class="span5 menu submenu visible-tablet visible-desktop" >
+                    {% include 'projects.html' %}
+                </div> <!-- End projects -->
+
+                <div id="extra" class="span5 menu submenu personal visible-tablet visible-desktop" >
+                    {% include 'personal.html' %}
+                </div> <!-- End submenu -->
 
             </div> <!-- End Left Col -->
 
@@ -63,6 +67,7 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
 
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'> 
 </body>
 </html>
 

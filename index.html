@@ -20,7 +20,7 @@
         {% endif %}
     </div >
         <div class="lead-in">
-            <p> {{post.excerpt}} . . .  <small><a href="{{ get_url(post.url) }}">Read More</a></small><p>
+            <p> {{post.content|truncate(250) }} <small><a href="{{ get_url(post.url) }}">Read More</a></small><p>
 
         </div>
     {% endfor %}
